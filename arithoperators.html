@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arithoperator</title>
+    <style>
+        button{
+            font-size: 20px;
+            padding: 10px 15px;
+            background-color: cadetblue;
+        }
+        </style>
+</head>
+<body>
+    <div>
+   <button onclick="domath('ADD')">ADD</button>
+   <button onclick="domath('SUB')">SUB</button>
+   <button onclick="domath('MUL')">MUL</button>
+   <button onclick="domath('DIV')">DIV</button>
+   <button onclick="domath('MOD')">MOD</button>
+   <button onclick="domath('OTHER')">OTHER</button>
+       </div>
+     <script>  
+     function domath(operationName) {
+         let x = 12;
+         let y =4;
+         switch(operationName){
+             case 'ADD':console.log("ADD::",x+y);break;
+             case 'SUB':console.log("SUB::",x-y);break;
+             case 'MUL':console.log("MUL:",x*y);break;
+             case 'DIV':console.log("DIV:",x/y);break;
+             case 'MOD':console.log("MOD:",x%y);break;
+        default:console.log('operation file not found');
+             
+         }
+     }  
+     </script> 
+</body>
+</html>
